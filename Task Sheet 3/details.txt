@@ -1,0 +1,11 @@
+Instruction:
+Iterate the given picture using HTML
+
+Application:
+* HTML Paragraphs
+* Create an unordered list
+* Create an ordered list
+* Create a description list
+* Create a bold text/phrase
+* Nest Lists
+* <a> href attribute

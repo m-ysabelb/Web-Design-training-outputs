@@ -1,0 +1,5 @@
+Instructions (Final Group Output):
+* Modify the given web page template by replacing the text and images in order to create your own bootstrap
+
+Application:
+* First-hand experience of applying Bootstrap 5 into your web page.

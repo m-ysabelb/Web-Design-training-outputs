@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <title> Types of Graphs and Charts </title>
+</head>
+
+<body style = "font-family: arial;">
+
+	<h1> Types of Graphs and Charts And Their Uses </h1>
+	<p> If you are wondering what are the different types of graphs and charts, their uses and names, this page summarizes them with examples and pictures. </p>
+
+	<p> As the different kinds of graphs aim to represent data, they are used in many areas such as: in statistics, in data science, in math, in economics, in business and etc.
+	</p>
+
+	<p>Although it is hard to tell what are all the types of graphs, this page consists all of the common types of statistical graphs and charts (and their meanings) widely used in any science. Examples of it are:
+	</p>
+		<ul>
+		<li> Line graphs </li>
+		<li> Bar Charts </li>
+		<li> Pie Charts </li>
+		</ul>
+<br>
+<ol>
+<h2> <li> Line Graphs </li> </h2>	
+<p> A line chart graphically displays data that changes continuously over time. Each line graph consists of points that connect data to show a trend (continuous change). Line graphs have an x-axis and a y-axis. In the most cases, time is distributed on the horizontal axis. </p>
+<p style="color:orange;"> Uses of line graphs: </p>
+	<ul>
+		<li> When you want to show trends. For example, how house prices have increased over time. </li>
+		<li> When you want to make predictions based on a data history over time. </li>
+		<li> When comparing two or more different variables, situations, and information over a given period of time. </li>
+	</ul>
+<p style="color:orange;"> Example: </p>
+<p style="font-family: Times New Roman; font-size: 20px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+Annual Sales Trend </p>
+<canvas id="paper" width="500" height="300"> </canvas>
+<script type="text/javascript">
+	const canvas = document.getElementById("paper");
+	const c = canvas.getContext("2d");
+
+	c.beginPath();	<!-- frame -->
+	c.rect(50, 10, 400, 250);
+	c.lineWidth = 1;
+	c.font = "10px Comic Sans MS";
+	c.fillText("5 000", 10, 260);	<!-- numbering 1 -->
+	c.fillText("10 000", 10, 203);
+	c.fillText("15 000", 10, 153);
+	c.fillText("20 000", 10, 103);
+	c.fillText("25 000", 10, 53);
+	c.fillText("Sales ($)", 455, 150);
+	c.fillText("Years", 230, 295);
+	c.stroke();
+	c.closePath();
+
+	c.beginPath();
+	c.moveTo(50, 200); <!-- 1st horizontal line -->
+	c.lineTo(450, 200);
+	c.moveTo(50, 150); <!-- 2nd horizontal line -->
+	c.lineTo(450, 150);
+	c.moveTo(50, 100); <!-- 3rd horizontal line -->
+	c.lineTo(450, 100);
+	c.moveTo(50, 50); <!-- 4th horizontal line -->
+	c.lineTo(450, 50);
+	c.strokeStyle = "#AAB7B8";
+	c.stroke();
+	c.closePath();
+
+	c.beginPath();
+	c.arc(100, 200, 2, 0, 2*Math.PI);
+	c.moveTo(100, 200);
+	c.lineTo(200, 150);
+	c.arc(200, 150, 2, 0, 2*Math.PI);
+	c.strokeStyle = "black";
+	c.stroke();		<!-- first line -->
+
+	c.moveTo(200, 150);
+	c.lineTo(300, 185);
+	c.arc(300, 185, 2, 0, 2*Math.PI);
+	c.stroke();		<!-- second line -->
+
+	c.moveTo(300, 185);
+	c.lineTo(400, 90);
+	c.arc(400, 90, 2, 0, 2*Math.PI);
+	c.stroke();		<!-- third line -->
+	
+	c.fillText("10 000", 90, 195);
+	c.fillText("15 000", 186, 145);
+	c.fillText("12 000", 285, 177);
+	c.fillText("22 000", 385, 85);
+	c.fillText("2019", 90, 275);
+	c.fillText("2020", 186, 275);
+	c.fillText("2021", 285, 275);
+	c.fillText("2022", 385, 275);
+	c.fillStyle = "black";
+
+
+</script>
+<h2> <li> Bar Charts </li> </h2>
+
+<p> Bar charts represent categorical data with rectangular bars (to understand what is categorical data see categorical data examples). Bar graphs are among the most popular types of graphs and charts in economics, statistics, marketing, and visualization in digital customer experience. They are commonly used to compare several categories of data.</p>
+
+<p> Each rectangular bar has length and height proportional to the values that they represent. </p>
+
+<p style="color:orange;"> Uses of bar charts: </p>
+	<ul>
+		<li> When you want to display data that are grouped into nominal or ordinal categories (see nominal vs ordinal data). </li>
+		<li> To compare data among different categories. </li>
+		<li> Bar charts can also show large data changes over time. </li>
+		<li> Bar charts are ideal for visualizing the distribution of data when we have more than three categories. </li>
+	</ul>
+
+<p style="color:orange;"> Example: </p>
+<p style="font-size: 14px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Sales of Product A and Product B </p>
+<canvas id="paper1" width="500" height="300"> </canvas>
+<script type="text/javascript">
+	const canvas1 = document.getElementById("paper1");
+	const d = canvas1.getContext("2d");
+
+	d.beginPath();
+	d.rect(50, 10, 410, 250);
+	d.strokeStyle = "blue";
+	d.stroke();
+	d.closePath();
+	
+	d.beginPath();
+	d.moveTo(50, 200); <!-- 1st horizontal line -->
+	d.lineTo(459, 200);
+	d.moveTo(50, 150); <!-- 2nd horizontal line -->
+	d.lineTo(459, 150);
+	d.moveTo(50, 100); <!-- 3rd horizontal line -->
+	d.lineTo(459, 100);
+	d.moveTo(50, 50); <!-- 4th horizontal line -->
+	d.lineTo(459, 50);
+	d.strokeStyle = "#AAB7B8";
+	d.stroke();
+	d.closePath();
+
+	d.beginPath();
+	d.fillStyle ="green";
+	d.fillRect(70, 80, 45, 180);
+	d.fill();
+	d.fillStyle = "orange";
+	d.fillRect(120, 130, 45, 129); <!-- 1st-bar pair -->
+	d.closePath();
+
+	d.beginPath();
+	d.fillStyle ="green";
+	d.fillRect(205, 40, 45, 220);
+	d.fill();
+	d.fillStyle = "orange";
+	d.fillRect(255, 100, 45, 159); <!-- 2nd-bar pair -->
+	d.closePath();
+
+	d.beginPath();
+	d.fillStyle ="green";
+	d.fillRect(340, 25, 45, 235);
+	d.fill();
+	d.fillStyle = "orange";
+	d.fillRect(390, 70, 45, 189); <!-- 3rd-bar pair -->
+	d.closePath();
+
+	d.beginPath();
+	d.fillStyle = "black";
+	d.fillText("86 000", 78, 73); <!-- nums sa 1st pair graph -->
+	d.fillText("62 000", 128, 123);
+	d.fillText("15 000", 212, 34); <!-- nums sa 2nd pair graph -->
+	d.fillText("15 000", 262, 94);
+	d.fillText("12 000", 347, 21); <!-- nums sa 3rd pair graph -->
+	d.fillText("22 000", 397, 65);
+	d.fillText("25 000", 10, 203); <!-- graph numbers -->
+	d.fillText("50 000", 10, 153);
+	d.fillText("75 000", 10, 103);
+	d.fillText("100 000", 10, 53);
+	d.fillText("2015", 105, 275);
+	d.fillText("2016", 240, 275);
+	d.fillText("2017", 378, 275);
+	d.fill();
+
+	d.beginPath();
+	d.fillStyle = "orange";
+	d.fillRect(165, 285 ,12, 12);
+	d.fillStyle = "black";
+	d.fillText("Product A", 185, 295);
+	d.fillStyle = "green";
+	d.fillRect(285, 285 ,12, 12);
+	d.fillStyle = "black";
+	d.fillText("Product B", 305, 295);
+	d.fill();
+
+</script>
+
+<h2> <li> Pie Charts </li> </h2>	
+<p> When it comes to statistical types of graphs and charts, the pie chart (or the circle chart) has a crucial place and meaning. It displays data and statistics in an easy-to-understand ‘pie-slice’ format and illustrates numerical proportion. </p>
+
+<p> Each pie slice is relative to the size of a particular category in a given group as a whole. To say it in another way, the pie chart brakes down a group into smaller pieces. It shows part-whole relationships. </p>
+
+<p style="color:orange;"> Uses of Pie Chart: </p>
+	<ul>
+		<li> When you want to create and represent the composition of something. </li>
+		<li> It is very useful for displaying nominal or ordinal categories of data. </li>
+		<li> To show percentage or proportional data. </li>
+		<li> When comparing areas of growth within a business such as profit. </li>
+		<li> Pie charts work best for displaying data for 3 to 7 categories. </li>
+	</ul>
+<p style="color:orange;"> Example: </p>
+<p style="font-size: 14px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Types of Transportation to School </p>
+<canvas id="paper2" width="500" height="300"> </canvas>
+<script type="text/javascript">
+	const canvas2 = document.getElementById("paper2");
+	const e = canvas2.getContext("2d");
+
+	e.beginPath();
+	e.arc(250, 130, 120, 0, 2*Math.PI);
+	e.lineWidth = "2";
+	e.stroke();
+	e.closePath();
+
+	e.beginPath();
+	e.moveTo(250, 130);
+	e.arc(250, 130, 120, 0, 2*Math.PI/3);
+	e.fillStyle = "#F4D03F"; <!-- yellow -->
+	e.lineWidth = "2";
+    e.strokeStyle = "#808B96";
+	e.fill();
+	e.stroke();
+	e.closePath();
+
+	e.beginPath();
+	e.moveTo(250, 130);
+	e.arc(250, 130, 120, 2*Math.PI/3, 13*Math.PI/9);
+	e.fillStyle = "#58D68D"; <!-- green -->
+	e.lineWidth = "2";
+    e.strokeStyle = "#808B96";
+	e.fill();
+	e.stroke();
+	e.closePath();
+	
+	e.beginPath();
+	e.moveTo(250, 130);
+	e.arc(250, 130, 120, 13*Math.PI/9, 0);
+	e.fillStyle = "#F945BF"; <!-- pink -->
+	e.lineWidth = "2";
+    e.strokeStyle = "#808B96";
+	e.fill();
+	e.stroke();
+	e.closePath();
+
+	e.beginPath();
+	e.fillStyle = "black";
+	e.font = "12px Arial";
+	e.fillText("walking: 35%", 50, 120);
+	e.fillText("tricycle: 35%", 368, 210);
+	e.fillText("car: 30%", 365, 60);
+	e.fill();
+
+	e.beginPath();
+	e.fillStyle = "#F945BF"; <!-- pink -->
+	e.fillRect(130, 285 ,12, 12);
+	e.fillStyle = "black";
+	e.fillText("car", 147, 295);
+	e.fillStyle = "#F4D03F"; <!-- yellow -->
+	e.fillRect(212, 285 ,12, 12);
+	e.fillStyle = "black";
+	e.fillText("tricycle", 229, 295);
+	e.fillStyle = "#58D68D"; <!-- green -->
+	e.fillRect(310, 285 ,12, 12);
+	e.fillStyle = "black";
+	e.fillText("walking", 327, 295);
+	e.fill();
+
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</ol>
+</body>
+
+<footer style = "font-size: 12px";>
+	Website content credits to <a href = "https://www.intellspot.com/types-graphs-charts/"> intellspot.com </a>
+</footer>
+
+</html>

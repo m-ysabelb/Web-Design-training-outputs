@@ -1,0 +1,3 @@
+Instructions:
+* Choose a topic for a simple web page
+* Decide a simple layout for contents that cover all previously used web components such as Canvas (Rectangle, Circle, Lines), Styles (color, border, etc), Lists, and Web links.

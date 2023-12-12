@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>	Canvas 2	</title>
+    <script>
+    	window.onload = function()	{
+        	var canvas = document.getElementById("paper"),
+        		c = canvas.getContext("2d");
+                halfc = Math.PI; //math.pi=180
+        
+            c.fillStyle = "#BDC3C7";
+            c.fillRect(0, 0, canvas.width, canvas.height);
+            
+            c.beginPath();
+            c.moveTo(173, 150);
+	    c.arc(173, 150, 120, 5*halfc/18, 35*halfc/36); 
+            c.fillStyle="#FF9800"; //#FF9800 orange
+            c.lineWidth = "5";
+            c.strokeStyle = "white";
+            c.fill();
+			c.stroke();
+            
+            c.beginPath();
+            c.moveTo(173, 150);
+	    c.arc(173, 150, 120, 35*halfc/36, 5*halfc/3);
+            c.fillStyle="#FFEB3B";//#FFEB3B yellow pie
+            c.lineWidth = "5";
+            c.strokeStyle = "white";
+            c.fill();
+	    c.stroke();
+            
+            c.beginPath();
+            c.moveTo(173, 150);
+	    c.arc(173, 150, 120, 5*halfc/3, 5*halfc/18);
+            c.fillStyle="#D4E157"; //#D4E157 green
+            c.lineWidth = "5";
+            c.strokeStyle = "white";
+            c.fill();
+	    c.stroke();
+            
+            c.beginPath();
+            c.moveTo(173, 150);	//line
+            c.arc(173, 150,120 ,5*halfc/18 ,halfc/3);
+            c.strokeStyle="white";
+            c.stroke();     
+        }
+        
+    </script>
+</head>
+<body>
+	<canvas id ="paper" width="350" height="300">
+    Go get chrome! ...
+    </canvas>
+</body>
+</html>

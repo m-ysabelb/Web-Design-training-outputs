@@ -1,0 +1,11 @@
+Instructions:
+* Form a group consisting of 5-7 members
+* Create a Single Web Page as a collaboration with your group
+
+Application
+* Group Brainstorming and Collaboration
+* Previous HTML Concepts such as Lists, Canvas, Styles, and inserting & resizing images
+* Designing the desired web page
+* Creating few graphics for the web page
+* Creating the designed Single Web Page from scratch
+* Group presentation

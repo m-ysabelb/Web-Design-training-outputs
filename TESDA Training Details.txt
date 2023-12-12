@@ -1,0 +1,8 @@
+Mode of Training: Online
+Duration: 25 days
+
+Starting date: September 13, 2023
+End date: October 13, 2023
+Status: Passed
+
+Graduation date: December 7, 2023

@@ -1,0 +1,7 @@
+Instruction:
+Iterate the given picture.
+
+Application:
+* Canvas Circle
+* Canvas Arc
+* Canvas Lines and Style(color)

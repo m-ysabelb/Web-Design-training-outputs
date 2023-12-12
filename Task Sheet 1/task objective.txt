@@ -1,0 +1,5 @@
+Iterate the given picture
+
+Application:
+* Canvas Coordinates
+* Canvas Rectangle and styles
